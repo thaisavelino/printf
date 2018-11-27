@@ -1,4 +1,4 @@
-t Specifiers
+#The % Format Specifiers
 The *%* specifiers that you can use in *ANSI C* are:
 Usual variable type Display
 
