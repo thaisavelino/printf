@@ -20,6 +20,7 @@
 
 /*
 %% :	percent sign
+\% :	percent sign
 .5 :	precision
 5		width
 
@@ -38,6 +39,13 @@ l		long
 lu		long unsigned
 s		string
 c		char
+u		unsigned decimal (integer) number
+x		number in hexadecimal (base 16)
+d		decimal (integer) base 10
+e		exponential floating-point number
+f		floating-point number
+i		integer (base 10)
+o		octal number (base 8)
 
 https://faq.cprogramming.com/cgi-bin/smartfaq.cgi?answer=1048379655&id=1043284385
 */

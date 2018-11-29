@@ -27,6 +27,16 @@ int main()
 			*  representation and %d expects the bit pattern to be a simple 
 			*  signed binary integer.
 		*****/
-		printf();
+		float f10 = 12345.7890;
+		printf("\n--- width and precision ---\n");
+		printf("  - %%f Float number\n");
+		printf("	%%8.3f 8 caractheres total, 3 digits after . = %8.3f \n", f10);
+		printf("	note that will show less then 10 \n");
+		printf("	%%10.3f 10 caractheres total, 2 digits after . = %10.2f \n", f10);
+		printf("	note that will show more then 4");
+		printf("	%%4.2f 4 caractheres total, 2 digits after . =   %4.2f \n", f10);
+		printf("	%%5.3f 5 caractheres total, 3 digits after . = %5.3f \n", f10);
+		printf("	%%5.3f 5 caractheres total, 3 digits after . = %5.3f \n", f10);
+		printf("	%%5.3f 5 caractheres total, 3 digits after . = %5.3f \n", f10);
     return 0;
 }
