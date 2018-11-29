@@ -22,15 +22,16 @@
 %% :	percent sign
 \% :	percent sign
 .5 :	precision
-5		width
+5		minimum width (right-justified)
 
 FLAGS
 #		prepounding, 0x
-0		the zero flag (padding with zeros)
+0		the zero flag (fill with zeros)
 +		the plus flag (if possitive)
 -		Finally, the minus sign will cause the output to be left-justified. 
 		This is important if you are using the width specifier and you want 
 		the padding to appear at the end of the output instead of the beginning:
+ex.: printff("%-+5d", 10) = '10   '	left-justified and plus sign and size 5
 
 FORMAT
 x		hexa
@@ -46,6 +47,18 @@ e		exponential floating-point number
 f		floating-point number
 i		integer (base 10)
 o		octal number (base 8)
+
+Special characters
+\a	audible alert
+\b	backspace
+\f	form feed
+\n	newline, or linefeed
+\r	carriage return
+\t	tab
+\v	vertical tab
+\\	backslash
+\%  percent
+
 
 https://faq.cprogramming.com/cgi-bin/smartfaq.cgi?answer=1048379655&id=1043284385
 */
