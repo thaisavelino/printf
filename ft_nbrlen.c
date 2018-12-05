@@ -1,28 +1,28 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_float.c                                      :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juazouz <juazouz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tavelino <tavelino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 15:02:58 by juazouz           #+#    #+#             */
-/*   Updated: 2018/11/30 15:04:53 by juazouz          ###   ########.fr       */
+/*   Created: 2018/12/05 16:02:25 by tavelino          #+#    #+#             */
+/*   Updated: 2018/12/05 16:04:05 by tavelino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/*
-**	Loads a float type variable using va_arg() and ap.
-**	Returns the number of printed characters.
-*/
-
-int		print_float(t_formatinfo *info, va_list ap)
+int		ft_nbrlen(long long num, int base_len)
 {
-	double	num;
+	int total;
 
-	num = va_arg(ap, double);
-	(void)info;
-	return (0);
+	total = 1;
+	if (num < 0)
+	{
+		num *= -1;
+		total++;
+	}
+	while ((num /= base_len) > 0)
+		total++;
+	return (total);
 }

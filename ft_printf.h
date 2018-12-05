@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juazouz <juazouz@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tavelino <tavelino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 11:27:18 by juazouz           #+#    #+#             */
-/*   Updated: 2018/12/03 15:38:45 by tavelino         ###   ########.fr       */
+/*   Updated: 2018/12/05 16:04:46 by tavelino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,5 +143,6 @@ int			print_hexup(t_formatinfo *info, va_list ap);
 int			print_float(t_formatinfo *info, va_list ap);
 int			print_str(t_formatinfo *info, va_list ap);
 int			print_char(t_formatinfo *info, va_list ap);
+int			ft_nbrlen(long long num, int base_len);
 
 #endif
