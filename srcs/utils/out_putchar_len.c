@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_max.c                                           :+:      :+:    :+:   */
+/*   out_write.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juazouz <juazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/11 16:32:59 by juazouz           #+#    #+#             */
-/*   Updated: 2018/12/11 16:33:13 by juazouz          ###   ########.fr       */
+/*   Created: 2018/12/11 13:37:52 by juazouz           #+#    #+#             */
+/*   Updated: 2018/12/11 15:36:11 by juazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_max(int a, int b)
+#include "ft_printf.h"
+
+void	out_putchar_len(t_output *output, char *ptr, size_t size)
 {
-	if (a > b)
-		return (a);
-	return (b);
+	int	i;
+
+	i = 0;
+	while ((size_t)i < size)
+	{
+		out_putchar(output, ptr[i]);
+		i++;
+	}
 }

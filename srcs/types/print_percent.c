@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_max.c                                           :+:      :+:    :+:   */
+/*   print_percent.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juazouz <juazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/11 16:32:59 by juazouz           #+#    #+#             */
-/*   Updated: 2018/12/11 16:33:13 by juazouz          ###   ########.fr       */
+/*   Created: 2018/12/11 17:38:53 by juazouz           #+#    #+#             */
+/*   Updated: 2018/12/11 17:39:27 by juazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_max(int a, int b)
+#include "ft_printf.h"
+
+void	print_percent(t_formatinfo *info, va_list ap, t_output *output)
 {
-	if (a > b)
-		return (a);
-	return (b);
+	(void)info;
+	(void)ap;
+
+	out_putchar(output, '%');
 }

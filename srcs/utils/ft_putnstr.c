@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_max.c                                           :+:      :+:    :+:   */
+/*   ft_putnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juazouz <juazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/11 16:32:59 by juazouz           #+#    #+#             */
-/*   Updated: 2018/12/11 16:33:13 by juazouz          ###   ########.fr       */
+/*   Created: 2018/12/07 10:49:00 by juazouz           #+#    #+#             */
+/*   Updated: 2018/12/10 11:03:05 by juazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_max(int a, int b)
+#include "ft_printf.h"
+
+/*
+**	Prints up to max characters.
+*/
+
+int	ft_putnstr(char *str, int max)
 {
-	if (a > b)
-		return (a);
-	return (b);
+	int	i;
+
+	i = 0;
+	while (i < max && str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	return (i);
 }
